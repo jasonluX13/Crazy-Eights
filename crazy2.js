@@ -68,6 +68,14 @@
         .map(card => card.image)
         .map(url => '<img src="'+ url + '" class="upcard">');
     document.getElementById('human').innerHTML = humanImages.join('');
+
+    const computerImages = computerHand
+        .map(() => '<img class="card">');
+    document.getElementById('computer').innerHTML =computerImages.join('');
+
+    const topCard = discardPile[0];
+    const topCardHtml = '<img class="card" src="' + topCard.image + '">'; 
+    document.getElementById('discard-pile').innerHTML = topCardHtml;
     
     console.log('computer: ' , computerHand);
     console.log('human: ', humanHand);
