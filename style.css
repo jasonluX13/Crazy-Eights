@@ -1,0 +1,25 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: green;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+#computer,
+#playing-field,
+#human{
+    display: flex;
+    justify-content: center; /*left right*/
+    align-items: center; /*vertical */
+}
+
+.card{
+    background-image: url(card.svg);
+    height: 202px;
+    width: 135px;
+    background-size: contain;
+    
+}
