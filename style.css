@@ -4,7 +4,7 @@ html, body{
     padding: 0;
 }
 body {
-    background: green;
+    background: gray;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
 }
@@ -14,6 +14,7 @@ body {
     display: flex;
     justify-content: center; /*left right*/
     align-items: center; /*vertical */
+    flex-wrap: wrap;
 }
 
 .card{
@@ -21,10 +22,14 @@ body {
     height: 202px;
     width: 135px;
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .upcard{
     height: 157x;
     width: 113px;
+}
 
+#deck-count {
+    font-size: 6em;
 }
